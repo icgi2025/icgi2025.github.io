@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <header>
+    <!-- Banner Image -->
+    <div class="banner">
+      <img src="./assets/images/banner.jpg" alt="ICGI 2025 Banner" style="width: 100%; max-height: 300px; object-fit: cover;">
+    </div>
+    
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/program.html">Program</a></li>
+        <li><a href="/committee.html">Committees</a></li>
+        <li><a href="/call-for-papers.html">Call for Papers</a></li>
+        <li><a href="/registration.html">Registration</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Content Wrapper -->
+  <div class="content-wrapper">
+    <!-- Main Content -->
+    <main>
+      {{ content }}
+    </main>
+
+    <!-- Sidebar on the Right -->
+    <aside class="sidebar">
+      <h2>Previous Editions</h2>
+      <ul>
+        {% for edition in site.data.editions %}
+          <li><a href="{{ edition.url }}">{{ edition.desc }}</a></li>
+        {% endfor %}
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ICGI | All rights reserved.</p>
+  </footer>
+</body>
+</html>
