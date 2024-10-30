@@ -12,8 +12,12 @@ TBD
 ## Organizing committee
 
  Franz Mayr (Universidad ORT Uruguay, Uruguay)
+
  Lena Strobl (Umeå University, Sweden)
+
  Olgried Unold (Wroclaw University of Science and Technology, Poland)
+
  Sicco Verwer (Delft University of Technology, Netherlands)
+ 
  Ryo Yoshinaka (Tohoku University, Japan)
 
