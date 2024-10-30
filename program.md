@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Program"
+title: "ICGI 2025 - Program"
 ---
 
 # Program

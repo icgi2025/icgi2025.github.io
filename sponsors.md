@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Sponsors"
+title: "ICGI 2025 - Sponsors"
 ---
 
 # Sponsors

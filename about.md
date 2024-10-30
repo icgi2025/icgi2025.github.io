@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "About ICGI 2025"
+title: "ICGI 2025 - About"
 ---
 
 # About ICGI 2025

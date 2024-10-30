@@ -36,8 +36,14 @@
       <h2>Previous Editions</h2>
       <ul>
         {% for edition in site.data.editions %}
-          <li><a href="{{ edition.url }}">{{ edition.desc }}</a></li>
-        {% endfor %}
+        <li>
+            {% if edition.url and edition.url != "#" %}
+                <a href="{{ edition.url }}">{{ edition.desc }}</a>
+            {% else %}
+                {{ edition.desc }}
+            {% endif %}
+        </li>
+    {% endfor %}
       </ul>
     </aside>
   </div>

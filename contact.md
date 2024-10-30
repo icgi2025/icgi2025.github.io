@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Contact"
+title: "ICGI 2025 - Contact"
 ---
 
 # Contact Us
