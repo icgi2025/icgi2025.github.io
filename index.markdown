@@ -8,8 +8,10 @@ The International Conference on Grammatical Inference (ICGI) brings together res
 
 Explore the program, meet our esteemed committee, and learn how to participate or support ICGI 2025.
 
-# Scope 
-The International Conference on Grammatical Inference (ICGI) (please visit: https://grammarlearning.org) is the premier venue for presenting, discovering, and discussing the latest research results at the intersection of Machine Learning and Formal Language Theory.
+
+
+# Scope {#scope}
+The International Conference on Grammatical Inference (ICGI) (please visit: [https://grammarlearning.org](https://grammarlearning.org)) is the premier venue for presenting, discovering, and discussing the latest research results at the intersection of Machine Learning and Formal Language Theory.
 
 This 17th edition of ICGI will be hosted by Universidad ORT Uruguay in Montevideo, Uruguay. The proceedings will be published in the PMLR series, marking an ongoing commitment to advancing research in this field.
 

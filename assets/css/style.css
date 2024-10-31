@@ -1,4 +1,11 @@
 /* Global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -46,6 +53,7 @@ body {
   margin-top: 0;
   padding-top: 0;
   display: flex;
+  gap: 20px;
 }
 
 /* Main content area */
@@ -60,6 +68,9 @@ main {
   padding: 15px;
   background-color: #f3f3f3;  /* Light background for contrast */
   border-left: 1px solid #ccc; /* Border on the left for separation */
+  /*flex:1;*/
+  /*left: 20%;*/ /* Adjust this percentage to move it closer to the center */
+  /*width: 20%;*/ /* Adjust width if necessary */
 }
 
 .sidebar h2 {
@@ -98,8 +109,12 @@ nav ul li a:hover {
 
 /* Logo styles */
 #organized-by {
-  text-align: center; /* Center the logos */
-  margin-top: 300px; /* Space above the logos */
+  /*text-align: center; /* Center the logos */
+  margin-top: 300; /* Space above the logos */
+}
+
+#scope {
+  margin-top: 200; /* Space above scope */
 }
 
 #organized-by img {
@@ -109,7 +124,7 @@ nav ul li a:hover {
 }
 
 #sponsors {
-  text-align: center; /* Center the logos */
+  /*text-align: center; /* Center the logos */
   margin-top: 20px; /* Space above the logos */
 }
 
@@ -117,6 +132,9 @@ nav ul li a:hover {
   position: relative;
   margin: 0;
   padding: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
 }
 
 .banner img {
@@ -136,9 +154,10 @@ nav ul li a:hover {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: add background for readability */
-  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7); /* Optional: add background for readability */
+  padding: 10px 15px;
   border-radius: 5px;
+  width: 90%; /* Keeps the text within the bounds on smaller screens */
 }
 
 .banner-text h2 {
@@ -152,8 +171,87 @@ nav ul li a:hover {
   margin: 0;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@media(max-width: 999px) {
+  body {
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+      flex-direction: column;
+  }
+
+  .banner-text h2 {
+    font-size: 1.2em; /* Smaller font size for mobile */
+    white-space: normal; /* Allow text to wrap on smaller screens */
+  }
+
+  .banner-text p {
+      font-size: 1em;
+  }
+
+  .banner-text {
+      padding: 8px 10px;
+      width: 95%;
+  }
+  .sidebar {
+      order: 2; /* Move sidebar below the main content */
+      margin-top: 20px;
+      width: 100%;               /* Make sidebar full width on mobile */
+      padding: 0;                /* Remove extra padding */
+      background-color: transparent;  /* Remove background color */
+      border-left: none;         /* Remove border */
+      border-top: none; /* Optional: Add a top border for separation */
+  }
+
+  .sidebar h2 {
+      font-size: 2em;   
+      color: #000;         /* Set color to black */               /* Match heading color */
+      padding-top: 10px;         /* Add some space above heading */
+  }
+
+  .sidebar ul {
+      padding-left: 20px;        /* Align list items nicely */
+  }
+
+  .sidebar li {
+      margin-bottom: 8px;
+      font-weight: bold;         /* Make items look like subheadings */
+  }
+}
+
+@media(max-width: 620px) {
+  header > h1 {
+      padding-top: 0.3em;
+  }
+}
+
+/* Small Screen (phones) */
+@media (max-width: 480px) {
+  .banner-text {
+      font-size: 1em;
+      padding: 8px;
+  }
+
+  .content-wrapper {
+      padding: 10px;
+  }
+
+  /* Further reduce font sizes for small screens */
+  body {
+      font-size: 14px;
+  }
+
+  h1 {
+      font-size: 1.5em;
+  }
+
+  h2 {
+      font-size: 1.2em;
+  }
+  .banner-text h2 {
+    font-size: 1em;
+  }
 }
