@@ -172,7 +172,7 @@ a {
 
 .hero {
     background: linear-gradient(135deg, rgba(26, 115, 232, 0.2), rgba(103, 58, 183, 0.2)), 
-                url('/assets/images/uruguay_photo.jpg') no-repeat center center/cover;
+                url('/assets/images/banner.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
