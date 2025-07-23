@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICGI 2025 - Site Moved</title>
+    <meta http-equiv="refresh" content="3; url=http://icgi2026.tudelft.nl/">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .redirect-message {
+            color: #333;
+            line-height: 1.6;
+        }
+        .redirect-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .redirect-link:hover {
+            text-decoration: underline;
+        }
+        .countdown {
+            font-size: 18px;
+            color: #007bff;
+            margin: 20px 0;
+        }
+    </style>
+    <script>
+        let countdown = 3;
+        function updateCountdown() {
+            if (countdown > 0) {
+                document.getElementById('countdown').textContent = countdown;
+                countdown--;
+                setTimeout(updateCountdown, 1000);
+            } else {
+                window.location.href = "http://icgi2026.tudelft.nl/";
+            }
+        }
+        window.onload = function() {
+            updateCountdown();
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>ICGI 2025 Conference Website Has Moved!</h1>
+        <div class="redirect-message">
+            <p>The International Conference on Grammatical Inference (ICGI) 2025 website has been relocated to:</p>
+            <p><a href="http://icgi2026.tudelft.nl/" class="redirect-link">http://icgi2026.tudelft.nl/</a></p>
+            <div class="countdown">
+                You will be automatically redirected in <span id="countdown">3</span> seconds...
+            </div>
+            <p>If you are not redirected automatically, please <a href="http://icgi2026.tudelft.nl/" class="redirect-link">click here</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
